@@ -1,0 +1,282 @@
+IP Upgrade report for DE10_Standard_GHRD
+Sun Mar 23 23:43:30 2025
+Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. IP Upgrade Summary
+  3. Successfully Upgraded IP Components
+  4. IP Upgrade Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++--------------------------------------------------------------------------------+
+; IP Upgrade Summary                                                             ;
++------------------------------+-------------------------------------------------+
+; IP Components Upgrade Status ; Passed - Sun Mar 23 23:43:30 2025               ;
+; Quartus Prime Version        ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
+; Revision Name                ; DE10_Standard_GHRD                              ;
+; Top-level Entity Name        ; DE10_Standard_GHRD                              ;
+; Family                       ; Cyclone V                                       ;
++------------------------------+-------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Successfully Upgraded IP Components                                                                                                                 ;
++-------------+----------------+---------+-------------------------------------+----------------------+-------------------------------------+---------+
+; Entity Name ; Component Name ; Version ; Original Source File                ; Generation File Path ; New Source File                     ; Message ;
++-------------+----------------+---------+-------------------------------------+----------------------+-------------------------------------+---------+
+; soc_system  ; Qsys           ; 18.1    ; soc_system/synthesis/soc_system.qip ; soc_system.qsys      ; soc_system/synthesis/soc_system.qip ;         ;
++-------------+----------------+---------+-------------------------------------+----------------------+-------------------------------------+---------+
+
+
++---------------------+
+; IP Upgrade Messages ;
++---------------------+
+Info (11902): Backing up file "soc_system.qsys" to "soc_system.BAK.qsys"
+Info (11902): Backing up file "soc_system/synthesis/soc_system.v" to "soc_system.BAK.v"
+Info (11837): Started upgrading IP component Qsys with file "soc_system.qsys"
+Info: 2025.03.23.23:42:10 Info: Starting to upgrade the IP cores in the Platform Designer system
+Info: 2025.03.23.23:42:10 Info: Finished upgrading the ip cores
+Info: 2025.03.23.23:42:20 Info: Saving generation log to /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system
+Info: 2025.03.23.23:42:20 Info: Starting: Create simulation model
+Info: 2025.03.23.23:42:20 Info: Loading DE10_Standard_GHRD
+Info: 2025.03.23.23:42:20 Info: Reading input file
+Info: 2025.03.23.23:42:20 Info: Adding clk_0 [clock_source 24.1]
+Info: 2025.03.23.23:42:20 Info: Parameterizing module clk_0
+Info: 2025.03.23.23:42:20 Info: Adding hps_0 [altera_hps 24.1]
+Info: 2025.03.23.23:42:20 Info: Parameterizing module hps_0
+Info: 2025.03.23.23:42:20 Info: Adding parallel_port_in_axi [altera_up_avalon_parallel_port 18.0]
+Info: 2025.03.23.23:42:20 Info: Parameterizing module parallel_port_in_axi
+Info: 2025.03.23.23:42:20 Info: Adding parallel_port_out_axi [altera_up_avalon_parallel_port 18.0]
+Info: 2025.03.23.23:42:20 Info: Parameterizing module parallel_port_out_axi
+Info: 2025.03.23.23:42:20 Info: Building connections
+Info: 2025.03.23.23:42:20 Info: Parameterizing connections
+Info: 2025.03.23.23:42:20 Info: Validating
+Info: 2025.03.23.23:42:24 Info: Done reading input file
+Info: 2025.03.23.23:42:25 Info: soc_system.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: 2025.03.23.23:42:25 Info: soc_system.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: 2025.03.23.23:42:25 Warning: soc_system.hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: 2025.03.23.23:42:25 Warning: soc_system.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Warning: 2025.03.23.23:42:25 Warning: soc_system.hps_0: HPS model no longer supports simulation for HPS FPGA Bridges.
+Info: 2025.03.23.23:42:25 Info: soc_system.parallel_port_in_axi: The Parallel Port is now deprecated. The PIO component (Processor and Peripherals/Peripherals
+Info: 2025.03.23.23:42:25 Info: soc_system.parallel_port_out_axi: The Parallel Port is now deprecated. The PIO component (Processor and Peripherals/Peripherals
+Warning: 2025.03.23.23:42:25 Warning: soc_system.hps_0: hps_0.f2h_sdram0_data must be connected to an Avalon-MM master
+Info: 2025.03.23.23:42:26 Info: soc_system: Generating "soc_system" for SIM_VERILOG
+Warning: 2025.03.23.23:42:29 Warning: hps_0.f2h_irq0: Cannot connect clock for irq_mapper.sender
+Warning: 2025.03.23.23:42:29 Warning: hps_0.f2h_irq0: Cannot connect reset for irq_mapper.sender
+Warning: 2025.03.23.23:42:29 Warning: hps_0.f2h_irq1: Cannot connect clock for irq_mapper_001.sender
+Warning: 2025.03.23.23:42:29 Warning: hps_0.f2h_irq1: Cannot connect reset for irq_mapper_001.sender
+Info: 2025.03.23.23:42:30 Info: hps_0: "Running  for module: hps_0"
+Info: 2025.03.23.23:42:31 Info: hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: 2025.03.23.23:42:31 Info: hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: 2025.03.23.23:42:31 Warning: hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: 2025.03.23.23:42:31 Warning: hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Warning: 2025.03.23.23:42:31 Warning: hps_0: HPS model no longer supports simulation for HPS FPGA Bridges.
+Info: 2025.03.23.23:42:31 Info: hps_0: "soc_system" instantiated altera_hps "hps_0"
+Info: 2025.03.23.23:42:31 Info: parallel_port_in_axi: Starting Generation of Parallel Port
+Info: 2025.03.23.23:42:31 Info: parallel_port_in_axi: "soc_system" instantiated altera_up_avalon_parallel_port "parallel_port_in_axi"
+Info: 2025.03.23.23:42:31 Info: parallel_port_out_axi: Starting Generation of Parallel Port
+Info: 2025.03.23.23:42:31 Info: parallel_port_out_axi: "soc_system" instantiated altera_up_avalon_parallel_port "parallel_port_out_axi"
+Info: 2025.03.23.23:42:32 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: 2025.03.23.23:42:32 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: 2025.03.23.23:42:32 Info: mm_interconnect_0: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: 2025.03.23.23:42:32 Info: irq_mapper: "soc_system" instantiated altera_irq_mapper "irq_mapper"
+Info: 2025.03.23.23:42:32 Info: rst_controller: "soc_system" instantiated altera_reset_controller "rst_controller"
+Info: 2025.03.23.23:42:50 Info: fpga_interfaces: "hps_0" instantiated altera_interface_generator "fpga_interfaces"
+Info: 2025.03.23.23:42:50 Info: hps_io: "hps_0" instantiated altera_hps_io "hps_io"
+Info: 2025.03.23.23:42:50 Info: parallel_port_out_axi_avalon_parallel_port_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "parallel_port_out_axi_avalon_parallel_port_slave_translator"
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: hps_0_h2f_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "hps_0_h2f_axi_master_agent"
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: parallel_port_out_axi_avalon_parallel_port_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "parallel_port_out_axi_avalon_parallel_port_slave_agent"
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: parallel_port_out_axi_avalon_parallel_port_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "parallel_port_out_axi_avalon_parallel_port_slave_agent_rsp_fifo"
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: 2025.03.23.23:42:50 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: 2025.03.23.23:42:50 Info: hps_0_h2f_axi_master_wr_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "hps_0_h2f_axi_master_wr_limiter"
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: parallel_port_out_axi_avalon_parallel_port_slave_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "parallel_port_out_axi_avalon_parallel_port_slave_burst_adapter"
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: 2025.03.23.23:42:50 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: 2025.03.23.23:42:50 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: parallel_port_out_axi_avalon_parallel_port_slave_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "parallel_port_out_axi_avalon_parallel_port_slave_rsp_width_adapter"
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: 2025.03.23.23:42:50 Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation/submodules
+Info: 2025.03.23.23:42:50 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: 2025.03.23.23:42:50 Info: soc_system: Done "soc_system" with 25 modules, 138 files
+Info: 2025.03.23.23:42:50 Info: qsys-generate succeeded.
+Info: 2025.03.23.23:42:50 Info: Finished: Create simulation model
+Info: 2025.03.23.23:42:50 Info: Starting: Create Modelsim Project.
+Info: 2025.03.23.23:42:50 Info: sim-script-gen --spd=/home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/soc_system.spd --output-directory=/home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation
+Info: 2025.03.23.23:42:50 Info: Doing: ip-make-simscript --spd=/home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/soc_system.spd --output-directory=/home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation
+Info: 2025.03.23.23:42:50 Info: Generating the following file(s) for VCSMX simulator in /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation
+Info: 2025.03.23.23:42:50 Info:     synopsys/vcsmx
+Info: 2025.03.23.23:42:50 Info:     synopsys/vcsmx
+Info: 2025.03.23.23:42:50 Info: Generating the following file(s) for VCS simulator in /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation
+Info: 2025.03.23.23:42:50 Info:     synopsys/vcs
+Info: 2025.03.23.23:42:50 Info: Generating the following file(s) for RIVIERA simulator in /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation
+Info: 2025.03.23.23:42:50 Info:     aldec
+Info: 2025.03.23.23:42:50 Info: Generating the following file(s) for XCELIUM simulator in /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation
+Info: 2025.03.23.23:42:50 Info:     xcelium
+Info: 2025.03.23.23:42:50 Info:     xcelium
+Info: 2025.03.23.23:42:50 Info:     xcelium
+Info: 2025.03.23.23:42:50 Info:     25 .cds.lib files in xcelium/cds_libs
+Info: 2025.03.23.23:42:50 Info: Generating the following file(s) for MODELSIM simulator in /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation
+Info: 2025.03.23.23:42:50 Info:     mentor/msim_setup.tcl
+2025.03.23.23:42:50 Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/simulation
+Info: 2025.03.23.23:42:50 Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+2025.03.23.23:42:50 Info: Finished: Create Modelsim Project.
+Info: 2025.03.23.23:42:50 Info: Starting: Create block symbol file (.bsf)
+Info: 2025.03.23.23:42:51 Info: Loading DE10_Standard_GHRD
+Info: 2025.03.23.23:42:51 Info: Reading input file
+Info: 2025.03.23.23:42:51 Info: Adding clk_0 [clock_source 24.1]
+Info: 2025.03.23.23:42:51 Info: Parameterizing module clk_0
+Info: 2025.03.23.23:42:51 Info: Adding hps_0 [altera_hps 24.1]
+Info: 2025.03.23.23:42:51 Info: Parameterizing module hps_0
+Info: 2025.03.23.23:42:51 Info: Adding parallel_port_in_axi [altera_up_avalon_parallel_port 18.0]
+Info: 2025.03.23.23:42:51 Info: Parameterizing module parallel_port_in_axi
+Info: 2025.03.23.23:42:51 Info: Adding parallel_port_out_axi [altera_up_avalon_parallel_port 18.0]
+Info: 2025.03.23.23:42:51 Info: Parameterizing module parallel_port_out_axi
+Info: 2025.03.23.23:42:51 Info: Building connections
+Info: 2025.03.23.23:42:51 Info: Parameterizing connections
+Info: 2025.03.23.23:42:51 Info: Validating
+Info: 2025.03.23.23:42:54 Info: Done reading input file
+Info: 2025.03.23.23:42:54 Info: soc_system.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+2025.03.23.23:42:54 Info: soc_system.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: 2025.03.23.23:42:54 Warning: soc_system.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Warning: 2025.03.23.23:42:54 Warning: soc_system.hps_0: HPS model no longer supports simulation for HPS FPGA Bridges.
+Info: 2025.03.23.23:42:54 Info: soc_system.parallel_port_in_axi: The Parallel Port is now deprecated. The PIO component (Processor and Peripherals/Peripherals/PIO) should be used instead.
+2025.03.23.23:42:54 Info: soc_system.parallel_port_out_axi: The Parallel Port is now deprecated. The PIO component (Processor and Peripherals/Peripherals
+Warning: 2025.03.23.23:42:54 Warning: soc_system.hps_0: hps_0.f2h_sdram0_data must be connected to an Avalon-MM master
+Info: 2025.03.23.23:42:55 Info: qsys-generate succeeded.
+Info: 2025.03.23.23:42:55 Info: Finished: Create block symbol file (.bsf)
+Info: 2025.03.23.23:42:55 Info:
+Info: 2025.03.23.23:42:55 Info: Starting: Create HDL design files for synthesis
+Info: 2025.03.23.23:42:55 Info: Loading DE10_Standard_GHRD
+Info: 2025.03.23.23:42:55 Info: Reading input file
+Info: 2025.03.23.23:42:55 Info: Adding clk_0 [clock_source 24.1]
+Info: 2025.03.23.23:42:55 Info: Parameterizing module clk_0
+Info: 2025.03.23.23:42:55 Info: Adding hps_0 [altera_hps 24.1]
+Info: 2025.03.23.23:42:55 Info: Parameterizing module hps_0
+Info: 2025.03.23.23:42:55 Info: Adding parallel_port_in_axi [altera_up_avalon_parallel_port 18.0]
+Info: 2025.03.23.23:42:55 Info: Parameterizing module parallel_port_in_axi
+Info: 2025.03.23.23:42:55 Info: Adding parallel_port_out_axi [altera_up_avalon_parallel_port 18.0]
+Info: 2025.03.23.23:42:55 Info: Parameterizing module parallel_port_out_axi
+Info: 2025.03.23.23:42:55 Info: Building connections
+Info: 2025.03.23.23:42:55 Info: Parameterizing connections
+Info: 2025.03.23.23:42:55 Info: Validating
+Info: 2025.03.23.23:42:58 Info: Done reading input file
+Info: 2025.03.23.23:42:59 Info: soc_system.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: 2025.03.23.23:42:59 Info: soc_system.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: 2025.03.23.23:42:59 Warning: soc_system.hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: 2025.03.23.23:42:59 Warning: soc_system.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Warning: 2025.03.23.23:42:59 Warning: soc_system.hps_0: HPS model no longer supports simulation for HPS FPGA Bridges.
+Info: 2025.03.23.23:42:59 Info: soc_system.parallel_port_in_axi: The Parallel Port is now deprecated. The PIO component (Processor and Peripherals/Peripherals
+Info: 2025.03.23.23:42:59 Info: soc_system.parallel_port_out_axi: The Parallel Port is now deprecated. The PIO component (Processor and Peripherals/Peripherals
+Warning: 2025.03.23.23:42:59 Warning: soc_system.hps_0: hps_0.f2h_sdram0_data must be connected to an Avalon-MM master
+Info: 2025.03.23.23:43:12 Info: soc_system: Generating "soc_system" for QUARTUS_SYNTH
+Warning: 2025.03.23.23:43:13 Warning: hps_0.f2h_irq0: Cannot connect clock for irq_mapper.sender
+Warning: 2025.03.23.23:43:13 Warning: hps_0.f2h_irq0: Cannot connect reset for irq_mapper.sender
+Warning: 2025.03.23.23:43:13 Warning: hps_0.f2h_irq1: Cannot connect clock for irq_mapper_001.sender
+Warning: 2025.03.23.23:43:13 Warning: hps_0.f2h_irq1: Cannot connect reset for irq_mapper_001.sender
+Info: 2025.03.23.23:43:14 Info: hps_0: "Running  for module: hps_0"
+Info: 2025.03.23.23:43:15 Info: hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: 2025.03.23.23:43:15 Info: hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: 2025.03.23.23:43:15 Warning: hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: 2025.03.23.23:43:15 Warning: hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Warning: 2025.03.23.23:43:15 Warning: hps_0: HPS model no longer supports simulation for HPS FPGA Bridges.
+Info: 2025.03.23.23:43:15 Info: hps_0: "soc_system" instantiated altera_hps "hps_0"
+Info: 2025.03.23.23:43:15 Info: parallel_port_in_axi: Starting Generation of Parallel Port
+Info: 2025.03.23.23:43:15 Info: parallel_port_in_axi: "soc_system" instantiated altera_up_avalon_parallel_port "parallel_port_in_axi"
+Info: 2025.03.23.23:43:15 Info: parallel_port_out_axi: Starting Generation of Parallel Port
+Info: 2025.03.23.23:43:15 Info: parallel_port_out_axi: "soc_system" instantiated altera_up_avalon_parallel_port "parallel_port_out_axi"
+Info: 2025.03.23.23:43:15 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: 2025.03.23.23:43:15 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: 2025.03.23.23:43:15 Info: mm_interconnect_0: "soc_system" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: 2025.03.23.23:43:15 Info: irq_mapper: "soc_system" instantiated altera_irq_mapper "irq_mapper"
+Info: 2025.03.23.23:43:15 Info: rst_controller: "soc_system" instantiated altera_reset_controller "rst_controller"
+Info: 2025.03.23.23:43:16 Info: fpga_interfaces: "hps_0" instantiated altera_interface_generator "fpga_interfaces"
+Info: 2025.03.23.23:43:16 Info: hps_io: "hps_0" instantiated altera_hps_io "hps_io"
+Info: 2025.03.23.23:43:16 Info: parallel_port_out_axi_avalon_parallel_port_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "parallel_port_out_axi_avalon_parallel_port_slave_translator"
+Info: 2025.03.23.23:43:16 Info: hps_0_h2f_axi_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "hps_0_h2f_axi_master_agent"
+Info: 2025.03.23.23:43:16 Info: parallel_port_out_axi_avalon_parallel_port_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "parallel_port_out_axi_avalon_parallel_port_slave_agent"
+Info: 2025.03.23.23:43:16 Info: parallel_port_out_axi_avalon_parallel_port_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "parallel_port_out_axi_avalon_parallel_port_slave_agent_rsp_fifo"
+Info: 2025.03.23.23:43:16 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: 2025.03.23.23:43:16 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: 2025.03.23.23:43:16 Info: hps_0_h2f_axi_master_wr_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "hps_0_h2f_axi_master_wr_limiter"
+Info: 2025.03.23.23:43:16 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/synthesis/submodules
+Info: 2025.03.23.23:43:16 Info: parallel_port_out_axi_avalon_parallel_port_slave_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "parallel_port_out_axi_avalon_parallel_port_slave_burst_adapter"
+Info: 2025.03.23.23:43:16 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/synthesis/submodules/altera_merlin_address_alignment.sv
+2025.03.23.23:43:16 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/synthesis/submodules
+Info: 2025.03.23.23:43:16 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: 2025.03.23.23:43:16 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: 2025.03.23.23:43:16 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: 2025.03.23.23:43:16 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: 2025.03.23.23:43:16 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/synthesis/submodules
+Info: 2025.03.23.23:43:16 Info: parallel_port_out_axi_avalon_parallel_port_slave_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "parallel_port_out_axi_avalon_parallel_port_slave_rsp_width_adapter"
+Info: 2025.03.23.23:43:16 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/synthesis/submodules
+Info: 2025.03.23.23:43:16 Info: Reusing file /home/tdn/FPGA/Digital_Chess_Clock/DE10_Standard_GHRD/soc_system/synthesis/submodules
+Info: 2025.03.23.23:43:16 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: 2025.03.23.23:43:26 Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: 2025.03.23.23:43:26 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: 2025.03.23.23:43:26 Info: soc_system: Done "soc_system" with 25 modules, 83 files
+Info: 2025.03.23.23:43:27 Info: qsys-generate succeeded.
+Info: 2025.03.23.23:43:27 Info: Finished: Create HDL design files for synthesis
+Info (11131): Completed upgrading IP component Qsys with file "soc_system.qsys"
+Info (23030): Evaluation of Tcl script /home/tdn/intelFPGA_lite/24.1std/quartus/common/tcl/internal/ip_regen/ip_regen.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 30 warnings
+    Info: Peak virtual memory: 602 megabytes
+    Info: Processing ended: Sun Mar 23 23:43:33 2025
+    Info: Elapsed time: 00:01:46
+    Info: Total CPU time (on all processors): 00:04:51
+
+
