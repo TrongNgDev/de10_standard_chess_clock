@@ -28,12 +28,14 @@ begin
 			counter_1s <= 0;
 			tick_1s <= '0';
 		elsif (clk'event and clk = '1') then
-			if counter_1s = 49_999_999 then
-				counter_1s <= 0;
-				tick_1s <= '1';
-			else
-				counter_1s <= counter_1s + 1;
-				tick_1s <= '0';
+			if enable = '1' then
+				if counter_1s = 49_999_999 then
+					counter_1s <= 0;
+					tick_1s <= '1';
+				else
+					counter_1s <= counter_1s + 1;
+					tick_1s <= '0';
+				end if;
 			end if;
        end if;
    end process;
