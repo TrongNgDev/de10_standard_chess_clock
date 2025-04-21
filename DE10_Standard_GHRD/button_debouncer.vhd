@@ -11,7 +11,7 @@ entity button_debouncer is
 end button_debouncer;
 
 architecture behavior of button_debouncer is
-	constant DEBOUNCE_TIME	: unsigned(19 downto 0) := to_unsigned(500000, 20); -- 10ms
+	constant DEBOUNCE_TIME	: unsigned(19 downto 0) := to_unsigned(499_999, 20); -- 10ms
 	signal ff					: std_logic_vector(1 downto 0) := (others => '0');
 	signal counter				: unsigned(19 downto 0) := (others => '0');
 	signal button_stable		: std_logic := '0';
@@ -24,7 +24,7 @@ begin
 			ff(1) <= ff(0);
 			if ff(1) /= button_stable then
 				counter <= counter + 1;
-				if counter < DEBOUNCE_TIME then
+				if counter = DEBOUNCE_TIME then
 					button_stable <= ff(1);
 					counter <= (others => '0');
 				end if;
